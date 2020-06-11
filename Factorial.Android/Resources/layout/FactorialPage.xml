@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:local="http://schemas.android.com/apk/res-auto"
 	android:orientation="vertical"
@@ -21,9 +21,7 @@
         android:text="Calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button1"
-        local:MvxBind="Click CalculateCommand"/>
-  
+        local:MvxBind="Click CalculateCommand" />
 	<View
     	android:layout_width="match_parent"
     	android:layout_height="1dp"
@@ -33,12 +31,14 @@
     	android:layout_width="match_parent"
     	android:layout_height="wrap_content"
     	android:textSize="24dp"
-    	android:text="The factorial is: " />
-	<TextView
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
-    	android:textColor="@android:color/holo_blue_dark"
-    	android:textSize="24dp"
-    	android:gravity="center"
-    	local:MvxBind="Text Result" />
+    	android:text="The factorial is:" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24dp"
+        android:gravity="center"
+        local:MvxBind="Text Result"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
 </LinearLayout>
